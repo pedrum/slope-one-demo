@@ -31,17 +31,13 @@ def usersWhoRatedBoth(users, itemId1, itemId2):
     return count
 
 #-----------------------------------MAIN---------------------------------------
-items = {}
-users = {}
-averages = {}
-
 users = {1: {'A':5, 'B':3, 'C':2},
          2: {'A':3, 'B':4},
          3: {'B':2, 'C':5}}
-
 items = {'A': {1:5, 2:3},
          'B': {1:3, 2:4, 3:2},
          'C': {1:2, 3:5}}
+averages = {}
 
 buildAverageDiffs(items, users, averages)
 
